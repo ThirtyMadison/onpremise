@@ -17,7 +17,6 @@
 #  SENTRY_REDIS_DB
 #  SENTRY_MEMCACHED_HOST
 #  SENTRY_MEMCACHED_PORT
-#  SENTRY_FILESTORE_DIR
 #  SENTRY_SERVER_EMAIL
 #  SENTRY_EMAIL_HOST
 #  SENTRY_EMAIL_PORT
@@ -33,6 +32,10 @@
 #  GITHUB_API_SECRET
 #  BITBUCKET_CONSUMER_KEY
 #  BITBUCKET_CONSUMER_SECRET
+#  SENTRY_FILESTORE_S3_ACCESS_KEY
+#  SENTRY_FILESTORE_S3_SECRET_KEY
+#  SENTRY_FILESTORE_S3_BUCKET_NAME
+#  AWS_S3_REGION_NAME, see https://github.com/getsentry/sentry/blob/b8ff6fcf644b3c4c6acae8f7c080f3558f92f0f4/src/sentry/filestore/s3.py#L405
 from sentry.conf.server import *  # NOQA
 
 import os
@@ -223,9 +226,11 @@ SENTRY_DIGESTS = 'sentry.digests.backends.redis.RedisBackend'
 # Uploaded media uses these `filestore` settings. The available
 # backends are either `filesystem` or `s3`.
 
-SENTRY_OPTIONS['filestore.backend'] = 'filesystem'
+SENTRY_OPTIONS['filestore.backend'] = 's3'
 SENTRY_OPTIONS['filestore.options'] = {
-    'location': env('SENTRY_FILESTORE_DIR'),
+    'access_key': env('SENTRY_FILESTORE_S3_ACCESS_KEY')
+    'secret_key': env('SENTRY_FILESTORE_S3_SECRET_KEY')
+    'bucket_name': env('SENTRY_FILESTORE_S3_BUCKET_NAME')
 }
 
 ##############
@@ -242,7 +247,7 @@ if env('SENTRY_USE_SSL', False):
     SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
 
 SENTRY_WEB_HOST = '0.0.0.0'
-SENTRY_WEB_PORT = 9000
+SENTRY_WEB_PORT = 80
 SENTRY_WEB_OPTIONS = {
     # 'workers': 3,  # the number of web workers
 }

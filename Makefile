@@ -1,4 +1,4 @@
-REPOSITORY?=sentry-onpremise
+REPOSITORY?=254542588532.dkr.ecr.us-east-2.amazonaws.com/tools-sentry
 TAG?=latest
 
 OK_COLOR=\033[32;01m
