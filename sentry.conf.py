@@ -247,7 +247,7 @@ if env('SENTRY_USE_SSL', False):
     SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
 
 SENTRY_WEB_HOST = '0.0.0.0'
-SENTRY_WEB_PORT = 80
+SENTRY_WEB_PORT = 8000 # It will not allow to bind to 80 due to reduced permissions
 SENTRY_WEB_OPTIONS = {
     # 'workers': 3,  # the number of web workers
 }
