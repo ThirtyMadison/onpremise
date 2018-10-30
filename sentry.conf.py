@@ -228,8 +228,8 @@ SENTRY_DIGESTS = 'sentry.digests.backends.redis.RedisBackend'
 
 SENTRY_OPTIONS['filestore.backend'] = 's3'
 SENTRY_OPTIONS['filestore.options'] = {
-    'access_key': env('SENTRY_FILESTORE_S3_ACCESS_KEY')
-    'secret_key': env('SENTRY_FILESTORE_S3_SECRET_KEY')
+    'access_key': env('SENTRY_FILESTORE_S3_ACCESS_KEY'),
+    'secret_key': env('SENTRY_FILESTORE_S3_SECRET_KEY'),
     'bucket_name': env('SENTRY_FILESTORE_S3_BUCKET_NAME')
 }
 
