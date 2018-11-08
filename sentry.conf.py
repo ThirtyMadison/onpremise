@@ -35,6 +35,9 @@
 #  SENTRY_FILESTORE_S3_ACCESS_KEY
 #  SENTRY_FILESTORE_S3_SECRET_KEY
 #  SENTRY_FILESTORE_S3_BUCKET_NAME
+#  SENTRY_SLACK_CLIENT_ID
+#  SENTRY_SLACK_CLIENT_SECRET
+#  SENTRY_SLACK_VERIFICATION_TOKEN
 #  AWS_S3_REGION_NAME, see https://github.com/getsentry/sentry/blob/b8ff6fcf644b3c4c6acae8f7c080f3558f92f0f4/src/sentry/filestore/s3.py#L405
 from sentry.conf.server import *  # NOQA
 
@@ -232,6 +235,16 @@ SENTRY_OPTIONS['filestore.options'] = {
     'secret_key': env('SENTRY_FILESTORE_S3_SECRET_KEY'),
     'bucket_name': env('SENTRY_FILESTORE_S3_BUCKET_NAME')
 }
+
+
+#########
+# Slack #
+#########
+
+SENTRY_OPTIONS['slack.client-id'] = env('SENTRY_SLACK_CLIENT_ID')
+SENTRY_OPTIONS['slack.client-secret'] = env('SENTRY_SLACK_CLIENT_SECRET')
+SENTRY_OPTIONS['slack.verification-token'] = env('SENTRY_SLACK_VERIFICATION_TOKEN')
+
 
 ##############
 # Web Server #
