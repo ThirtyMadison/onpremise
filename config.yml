@@ -61,3 +61,35 @@
 #   access_key: 'AKIXXXXXX'
 #   secret_key: 'XXXXXXX'
 #   bucket_name: 's3-bucket-name'
+github-app.id: 45573
+github-app.name: 'Onpremise sentry integration'
+github-app.client-id: 'Iv1.771eaad7c22025a7'
+github-app.client-secret: 'ed041601453fb97773fca470f47103127ad0e831'
+github-app.private-key: |
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEpAIBAAKCAQEAlo9j0mMwU2YPnR0zEzBbWtP0u3QnYR06tuGkZvpczPc5hE/x
+  A4nkKLyGJyZ3LUGBHi0fuRKewOteZma5V38F8KWMMH6FvlHZF3CZFlzVQR9zK5KP
+  U12BQK7Va7xp8BonwsyeWt6mJT17+vOxnnl/yRtk4m3V4we5K6PIj1SDEP98SThP
+  Q0OUKY4DzQ7C0bzadDCD3zWtsQ93SnHiZaMidkrHvlh3MH85pTGhWw65em2jvlg8
+  E3zRgyak48wj1/HcArixuTHxWKv9j3W6xK5CsH778s+fAARqo74pre9o7CytXmPs
+  Ml1ju84NZ+ZzT4KaHEq76k6m96b5IL0R0Tzi0QIDAQABAoIBAQCORXc1cqdS16m/
+  dL0zz8kz3gBwNoWTvlQiRrzc1o5k3OVMA2KjTmT8nZFDY5TQfgqt4kQM1eyQLpno
+  t/9CD/Uj/rung5eMTbmP7cWrnROjUz24mei4BS7DWbKw+L0+tuiFqmelRKnJnP0Q
+  GcHpF7TJ7An78YBg5YZ0F3PJBTpJD0Bt5Ye2cRfSzvcCO9UmYvUREM0Emd5iJ7iu
+  nAxvNEW6/ULGTcnXUZtwDSaqpW8Bdtj9e8u6tnBNoFAgLJnxvIbQXuoSCX87d9q+
+  wcwTZPsmfocDl/b0f6qtrLc7ZRD9H/OFmIX1QRQyF4zMhRGymLhcuSn84V621H/c
+  IfLSqJlxAoGBAMWcCi67eJSE1sbUqWVRKAbP10Yg1uGhGSlFhPPH+8BCwiq5yJ+h
+  CZMV3UwHjtBo5EJfJAgY2QPg+HeYmkfFCM5D5TbCf2ktqfU8aOjdcD5ArGYdld/v
+  +r34P0rhx6iOz06B8t1qqsC/6TgXJaEAf5S9sfu6fmfqUjum6tTNqH7NAoGBAMMM
+  WRDs8376+MiuuHK+qntNpcTts8/tZSgQ1gS44Ds+XTjhDwux68HpCKp3T1+Izf6v
+  ZD+5oa2t4njfnVhpek2+q435nQ0/GQHRyPPUDIeesls5T/m4CA61gpQkJkc5UYuZ
+  PSKl2sDEXKai/JyFfjx+3vbE0mS1uSV+zq74nGwVAoGAfThA95YSdcKruvkdkrdX
+  ruFbn/PFVtrX7+A+vKAYNp/XHG335LeOMqdjQP91Dzm4kxpo4bylICEaMecAtMP1
+  rYc2o3midUrbbSxnqlBQBRLEbD0JMQuID4NU0CW8eGJumWgdNxOVumih58o7LQf8
+  0ItYUpS97yl8DJLcMhdUU20CgYEAq0KEUeA8TRqAp3UCb34KowmirC8q2z9OusdN
+  pAfQmzQ/FlpGo7Ytk63R9hucjf3JIf9OvsV3uNAdMpTly2OSCAGLELZDuAXXJ0nU
+  cIOYHNyzLnY8Sr/UE1Y8uWakVZV2jGSY0XtfgDLqR0aFF8n+9Y9QpsxbECKf1tRp
+  Fikk76ECgYALGDALn0s8WsBswCiD5xEAax7Cx3NKAH0openpybk7K0bkEUXyWqgc
+  SGzcN64Aso3vnruI8G1QSlNAwU4YZ4yAddcCOaVJeGAi9dLFty+eF6RpqxRwZCXc
+  EbPn98STEl9ooXr05I50BX4vGIR31YfNTV6NGQnjWY7ySdcaBnbNUw==
+  -----END RSA PRIVATE KEY-----
